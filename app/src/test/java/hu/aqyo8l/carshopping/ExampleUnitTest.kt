@@ -1,4 +1,4 @@
-package com.example.carshopping
+package hu.aqyo8l.carshopping
 
 import org.junit.Test
 

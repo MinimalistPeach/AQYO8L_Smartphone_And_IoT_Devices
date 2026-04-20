@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.carshopping"
+    namespace = "hu.aqyo8l.carshopping"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.carshopping"
+        applicationId = "hu.aqyo8l.carshopping"
         minSdk = 33
         targetSdk = 36
         versionCode = 1
