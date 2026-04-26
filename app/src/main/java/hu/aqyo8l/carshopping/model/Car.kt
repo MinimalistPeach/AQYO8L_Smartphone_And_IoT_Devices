@@ -5,5 +5,8 @@ data class Car(
     val brand: String,
     val model: String,
     val price: Int,
-    val imgUrl: String
+    val imgUrl: String,
+    val maxSpeedKmh: Int,
+    val zeroToHundredSec: Double,
+    val availableColors: List<String>
 )

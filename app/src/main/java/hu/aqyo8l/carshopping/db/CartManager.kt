@@ -3,11 +3,19 @@ package hu.aqyo8l.carshopping.db
 import hu.aqyo8l.carshopping.model.Car
 
 object CartManager {
-    private val cartItems = mutableListOf<Car>()
-
     fun addToCart(car: Car) {
-        cartItems.add(car)
+        DatabaseProvider.db().addToCart(car.id)
     }
 
-    fun getCartItems(): List<Car> = cartItems
+    fun getCartItems(): List<Car> = DatabaseProvider.db().getCartItems()
+
+    fun getCartCount(): Int = DatabaseProvider.db().getCartCount()
+
+    fun removeOneFromCart(car: Car) {
+        DatabaseProvider.db().removeOneFromCart(car.id)
+    }
+
+    fun clearCart() {
+        DatabaseProvider.db().clearCart()
+    }
 }
